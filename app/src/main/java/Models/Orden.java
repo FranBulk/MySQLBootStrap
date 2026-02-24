@@ -6,7 +6,8 @@ public class Orden {
     private String estado;
     private String cliente;
 
-    public Orden() {}
+    public Orden() {
+    }
 
     public Orden(int folio, String estado, String cliente) {
         this.folio = folio;

@@ -14,7 +14,7 @@ public class Main_Controller {
     @GetMapping("/")
     public String index(Model model) {
 
-        // LISTA DE ÓRDENES (MODIFICA AQUÍ)
+        // LISTA DE ÓRDENES
         List<Orden> ordenes = new ArrayList<>();
 
         ordenes.add(new Orden(6, "Orden lista", "Paola"));
@@ -23,9 +23,8 @@ public class Main_Controller {
         ordenes.add(new Orden(2, "Orden lista", "Julio"));
         ordenes.add(new Orden(13, "Orden no lista", "Liz"));
 
+        // ATRIBUTOS PARA THYMELEAF
         model.addAttribute("ordenes", ordenes);
-
-        // DATOS DE LOS CUADROS
         model.addAttribute("totalOrdenes", ordenes.size());
         model.addAttribute("bounceRate", "40%");
         model.addAttribute("usuarios", 5);
