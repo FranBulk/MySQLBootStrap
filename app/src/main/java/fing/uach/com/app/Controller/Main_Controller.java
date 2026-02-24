@@ -25,10 +25,10 @@ public class Main_Controller {
         ordenes.add(new Orden(13, "Not Ready", "Pedro"));
 
         // ATRIBUTOS PARA THYMELEAF
-        model.addAttribute("ordenes", ordenes);
-        model.addAttribute("totalOrdenes", ordenes.size());
-        model.addAttribute("bounceRate", "80%");
-        model.addAttribute("usuarios", 5);
+        model.addAttribute("Orders", ordenes);
+        model.addAttribute("TotalOrders", ordenes.size());
+        model.addAttribute("BounceRate", "80%");
+        model.addAttribute("Users", 5);
 
         return "index";
     }
